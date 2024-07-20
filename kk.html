@@ -1,0 +1,124 @@
+
+
+### Website Architecture (varta.talkndheal.com)
+
+#### 1. Frontend Architecture
+
+**Framework and Libraries:**
+
+- **React:** Core framework for building the user interface.
+- **React Router:** For client-side routing and navigation.
+
+**Other Dependencies:**
+- `@emotion/serialize`: ^1.1.4
+- `@emotion/styled`: ^11.11.5
+- `@fortawesome/fontawesome`: ^1.1.8
+- `@fortawesome/react-fontawesome`: ^0.2.0
+- `@material-tailwind/react`: ^2.1.9
+- `@material-ui/core`: ^4.11.4
+- `@material-ui/icons`: ^4.11.2
+- `@material-ui/lab`: ^4.0.0-alpha.58
+- `@mui/x-date-pickers`: ^7.2.0
+- `@react-google-maps/api`: ^2.19.3
+- `@testing-library/jest-dom`: ^5.17.0
+- `@testing-library/react`: ^13.4.0
+- `@testing-library/user-event`: ^13.5.0
+- `agora-rtc-react`: ^2.2.0
+- `agora-rtc-sdk-ng`: ^4.21.0
+- `axios`: ^1.6.7
+- `bcryptjs`: ^2.4.3
+- `bootstrap`: ^5.3.3
+- `boxicons`: ^2.1.4
+- `crypto-js`: ^4.2.0
+- `dayjs`: ^1.11.10
+- `font-awesome`: ^4.7.0
+- `js-cookie`: ^3.0.5
+- `moment`: ^2.30.1
+- `react`: ^18.2.0
+- `react-bootstrap`: ^2.10.2
+- `react-dom`: ^18.2.0
+- `react-fontawesome`: ^1.7.1
+- `react-geolocated`: ^4.1.2
+- `react-icons`: ^5.0.1
+- `react-router-dom`: ^6.22.1
+- `react-scripts`: ^5.0.1
+- `react-select`: ^5.8.0
+- `react-simple-star-rating`: ^5.1.7
+- `react-slick`: ^0.30.2
+- `react-spinners`: ^0.13.8
+- `react-toastify`: ^10.0.4
+- `react-web-share`: ^2.0.2
+- `slick-carousel`: ^1.8.1
+- `web-vitals`: ^2.1.4
+- `webpack`: ^5.92.1
+
+**Context API:** For state management.
+
+**Hooks:** `useState`, `useEffect`, `useParams`, `useNavigate`, `useContext`.
+
+**Fetch API:** For making API requests.
+
+**Bootstrap 5 / CSS:** For styling components.
+
+**Components:**
+- **Authentication:** Login.
+- **Astrologer Services for Expertise:** Tabs for Chat, Call, Video Call.
+- **Astrologer Service for Chat/Call/Video:** Tabs for Chat, Call, Video Call.
+- **Astrologer Chat Card:** Tabs for Chat, Call, Video Call.
+- **Common:** Header, Footer, Login Modal.
+
+**Routing:**
+- **Routes:** Define routes for different pages like Login, Astrologer Chat Card, etc.
+- **Protected Routes:** Ensure certain routes are only accessible to authenticated users.
+
+**State Management:**
+- **Global State:** Manage global state using Context API for user authentication, profile data, etc.
+- **Local State:** Use local state within components where necessary.
+
+#### Task Description
+
+1. **User Login and Redirection to Edit Profile**
+   - **Task:** Implement login functionality.
+   - **Description:** On successful login, check if the user is new. If so, redirect to the edit-profile page. After updating the profile, redirect to the home page.
+
+2. **Home Page with Tabs for Astrologer Services**
+   - **Task:** Implement tabbed navigation on the home page.
+   - **Description:** Create three tabs: Chat with Astrologers, Call with Astrologers, Video Call with Astrologers. Ensure the Chat tab is selected by default. Fetch and display astrologers based on the selected tab.
+
+3. **Astrologer Listing**
+   - **Task:** Create components to list astrologers.
+   - **Description:** Display astrologers based on the selected service (chat, call, video call). Fetch data from the backend and render it in a list or grid format.
+
+4. **Astrologer Filter By State/Language**
+   - **Task:** Allow users to filter astrologers by language or state.
+
+5. **Astrologer Filter By Expertise**
+   - **Task:** Allow users to filter astrologers by expertise.
+
+6. **Astrologers Search Functionality**
+   - **Task:** Enable users to search for astrologers.
+
+7. **Filter By Category**
+   - **Task:** Allow users to filter astrologers by category.
+
+8. **Chat With Astrologers**
+   - **Task:** Enable users to chat with astrologers.
+
+9. **Call With Astrologers**
+   - **Task:** Enable users to call astrologers.
+
+10. **Video Call With Astrologers**
+    - **Task:** Enable users to video call astrologers.
+
+11. **Chat Assistant**
+    - **Task:** Allow users to join a chat assistant session if they have had a paid session before. Users can only have 5 chat sessions per day.
+
+12. **Emergency Voice Call**
+    - **Task:** Allow users to join an emergency voice call if they have had a paid session before. Emergency calls will deduct more from the account than normal calls, according to the emergency rate.
+
+13. **Emergency Video Call**
+    - **Task:** Allow users to join an emergency video call if they have had a paid session before. Emergency calls will deduct more from the account than normal calls, according to the emergency rate.
+
+14. **Live Streaming**
+    - **Task:** Allow users to join any live session if an astrologer has started streaming.
+
